@@ -2,12 +2,19 @@
 <html>
 
 <head>
-  <title>Dice Roll4</title>
+  <title>Dice Roll1</title>
 </head>
 
 <body>
 <h1>2d6</h1>
-   <p><%= @outcome %></p>
+<ul>
+   <% @rolls.each do |a_roll| %>
+   <li>
+   <%= a_roll %>
+   </li>
+   <% end %>
+</ul>
+
 </body>
 
 </html>
